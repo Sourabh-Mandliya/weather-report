@@ -51,7 +51,7 @@ function Weather(){
             <div>
                 <h1 style={{fontSize:"3vw"}}>{weatherData.main.temp} <sup>o</sup>C</h1>
             </div>
-            <div style={{fontSize:"1vw"}}>
+            <div style={{fontSize:"2vw"}}>
                 <p>
                     <strong> Low - High  
                         <br/> 
