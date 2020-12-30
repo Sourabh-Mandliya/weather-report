@@ -68,15 +68,15 @@ function Weather(){
     return (
         <div style={{
             backgroundColor:"#0A1172",
-            marginLeft:"25%",
-            marginRight:"25%",
+            marginLeft:"20%",
+            marginRight:"20%",
             marginTop:"2%",
             fontFamily:"monospace",
             color:"white", 
             padding:"5%",
             border:"1px solid black",
             height:"50%",
-            width:"50%",
+            width:"60%",
             borderRadius:"20px"}}
             class="App"
         >
