@@ -8,11 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 function Weather(){
     const [ weatherData, setWeatherData ] = useState({});
     const [ cityName, setCityName ] = useState("delhi");
-    const [ message, setMessage ] = useState("");
     const date = new Date();
 
     const apiKey = "9062f34f404c7205cfd784137f7ee85d";
-    const notify = () => toast.warning(message,{hideProgressBar: true});
+    const notify = () => toast.warning("Please search for a valid city 😩",{hideProgressBar: true});
     
     useEffect(()=>{
         findData();
@@ -21,9 +20,8 @@ function Weather(){
     async function callApi(){
        await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`).then(response =>{
         setWeatherData(response.data);
-        console.log(response.data);
+        //console.log(response.data);
        }).catch(err =>{
-           setMessage("Please search for a valid city 😩");
            notify();
            console.log(err);
        })
