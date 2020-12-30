@@ -3,6 +3,7 @@ import {Input,Button,Row,Col } from "reactstrap";
 import Axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Weather.css';
   
 
 function Weather(){
@@ -77,6 +78,7 @@ function Weather(){
             height:"50%",
             width:"50%",
             borderRadius:"20px"}}
+            class="App"
         >
             <Row>
                 <Col>
