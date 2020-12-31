@@ -37,23 +37,31 @@
     border-radius: 20px;
   }
   
-#temp{
-  font-size: 8vw;
+  #temp{
+    font-size: 8vw;
+  }
+
+  #data{
+    font-size: 5vw;
+  }  
 }
 
-#data{
-  font-size: 5vw;
-}
-  
-}
 @media screen and (max-width: 367px) {
-  
-#temp{
-  font-size: 6vw;
+  #temp{
+    font-size: 6vw;
+  }
+
+  #data{
+    font-size: 3vw;
+  }  
 }
 
-#data{
-  font-size: 3vw;
-}
-  
+@media screen and (max-width: 255px) {
+  #temp{
+    font-size: 4vw;
+  }
+
+  #data{
+    font-size: 2vw;
+  }  
 }
