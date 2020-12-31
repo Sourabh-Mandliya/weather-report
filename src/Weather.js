@@ -66,7 +66,8 @@ function Weather(){
     </div>
 
     return (
-        <div style={{
+        <div 
+        style={{
             backgroundColor:"#0A1172",
             marginLeft:"20%",
             marginRight:"20%",
@@ -82,10 +83,10 @@ function Weather(){
         >
             <Row>
                 <Col>
-            <Input type="text" placeholder="Search city or state" onChange={(e)=>changeCityName(e)} ></Input>
-            <br />
-            <Button outline block type="submit" color="primary" onClick={()=>findData()}>Search</Button>
-            </Col>
+                    <Input type="text" placeholder="Search city or state" onChange={(e)=>changeCityName(e)} ></Input>
+                    <br />
+                    <Button outline block type="submit" color="primary" onClick={()=>findData()}>Search</Button>
+                </Col>
             </Row>
             <br />
             {details}
