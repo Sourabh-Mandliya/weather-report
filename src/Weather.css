@@ -13,6 +13,13 @@
   border-radius: 20px;
 }
 
+#temp{
+  font-size: 3vw;
+}
+
+#data{
+  font-size: 2vw;
+}
 
 @media screen and (max-width: 480px) {
   .Weather {
@@ -29,6 +36,13 @@
     width: 100%;
     border-radius: 20px;
   }
+  
+#temp{
+  font-size: 6vw;
+}
 
+#data{
+  font-size: 4vw;
+}
   
 }
