@@ -66,21 +66,7 @@ function Weather(){
     </div>
 
     return (
-        <div 
-        style={{
-            backgroundColor:"#0A1172",
-            marginLeft:"20%",
-            marginRight:"20%",
-            marginTop:"2%",
-            fontFamily:"monospace",
-            color:"white", 
-            padding:"5%",
-            border:"1px solid black",
-            height:"50%",
-            width:"60%",
-            borderRadius:"20px"}}
-            class="App"
-        >
+        <div className="Weather">
             <Row>
                 <Col>
                     <Input type="text" placeholder="Search city or state" onChange={(e)=>changeCityName(e)} ></Input>
