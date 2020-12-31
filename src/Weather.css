@@ -26,23 +26,34 @@
     text-align: center;
     font-family: monospace;
     background-color: #0A1172;
-    margin-left : 0% ;
-    margin-right: 0%;
+    margin-left : 2% ;
+    margin-right: 2%;
     margin-top : 25%;
     color: white; 
     padding: 5%;
     border: 1px solid black;
     height: auto;
-    width: 100%;
+    width: 96%;
     border-radius: 20px;
   }
   
 #temp{
-  font-size: 10vw;
+  font-size: 8vw;
 }
 
 #data{
   font-size: 5vw;
+}
+  
+}
+@media screen and (max-width: 367px) {
+  
+#temp{
+  font-size: 6vw;
+}
+
+#data{
+  font-size: 3vw;
 }
   
 }
