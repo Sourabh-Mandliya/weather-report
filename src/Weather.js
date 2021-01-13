@@ -36,6 +36,12 @@ function Weather(){
         callApi();
     }
 
+    function handleKeyPress(event){
+        if (event.keyCode === 13) {
+            callApi();
+        }
+    }
+
     const details = !(Object.keys(weatherData).length === 0 && weatherData.constructor === Object) &&<div>
         <h3>{weatherData.name}, {weatherData.sys.country}</h3>
         <h6>{(date.getDate()+ "-" + (date.getMonth()+1)+ "-" +date.getFullYear())}</h6>  
@@ -69,7 +75,7 @@ function Weather(){
         <div className="Weather">
             <Row>
                 <Col>
-                    <Input type="text" placeholder="Search city or state" onChange={(e)=>changeCityName(e)} ></Input>
+                    <Input type="text" placeholder="Search city or state" onChange={(e)=>{changeCityName(e)}} onKeyDown={(e)=>handleKeyPress(e)} ></Input>
                     <br />
                     <Button outline block type="submit" color="primary" onClick={()=>findData()}>Search</Button>
                 </Col>
